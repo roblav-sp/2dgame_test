@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3320790520169323240}
   - component: {fileID: 3320790520169323241}
   - component: {fileID: 3320790520169323238}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrassSprite
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3320790520169323239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.55, y: -0.89, z: 1.35}
-  m_LocalScale: {x: 2.3440492, y: 1.0355254, z: 1}
+  m_LocalPosition: {x: 1.18, y: -0.94, z: 1.35}
+  m_LocalScale: {x: -2.2, y: 3.3324184, z: 1.6143497}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -117,7 +117,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.17000008, y: -3.4977007}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,5 +128,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.24, y: 10.24}
+  m_Size: {x: 10, y: 3.5776672}
   m_EdgeRadius: 0

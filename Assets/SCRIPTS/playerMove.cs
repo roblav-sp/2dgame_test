@@ -1,23 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class playerMove : MonoBehaviour
 {
-    public bool face = true;
+    public bool face = false;
     public Transform HeroiT;
-    public float speed = 2.5f;
-    public float force = 40.0f;
+    public float speed = 10.0f;
+    public float force = 10.0f;
     public Rigidbody2D heroiRB;
 
-    public Text txtmessage;
+   //public Text txtmessage;
 
     // To jump
-    public bool liberaPulo = false;
+    public bool liberaPulo = true;
     public Transform check;
     public LayerMask wtground;
-    public float radius = 0.3f;
+    public float radius = 1.5f;
 
     public bool attackmove = false;
     public Animator anim;
@@ -27,7 +28,7 @@ public class playerMove : MonoBehaviour
         HeroiT = GetComponent<Transform>();
         heroiRB = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        //check = GetComponent<Transform>();
+        wtground = GetComponent<LayerMask>();
 
     }
 
@@ -103,7 +104,7 @@ public class playerMove : MonoBehaviour
             {
                // Estou no chao ?
                liberaPulo = Physics2D.OverlapCircle(check.position, radius, wtground);
-               txtmessage.text = "Les Dominateurs";                    
+               //txtmessage.text = "!";
             }
         }
     }
